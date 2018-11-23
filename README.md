@@ -1,4 +1,4 @@
-# Q-Learning-Visualizer
+# Q Learning Visualizer
 ## Overview
 Q-learning is a reinforcement learning technique used in machine learning. The goal of Q-learning is to learn a policy, which tells an agent what action to take under what circumstances. It does not require a model of the environment and can handle problems with stochastic transitions and rewards, without requiring adaptations.
 
