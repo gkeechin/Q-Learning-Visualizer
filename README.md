@@ -4,9 +4,9 @@ Q-learning is a reinforcement learning technique used in machine learning. The g
 
 In this tool, we are using `curses` to render our map and various simulation statistics such as Q-Table entry at a particular state. The following are some examples of the program running:
 
-![Pre-Trained Q-Learning Agent Exploring](img/video_1.gif =250x250)
-
-![Agent Successfully Running Through The Map](img/video_2.gif =250x250)
+Untrained Agent Exploration | Trained Agent Navigation
+------------ | -------------
+<img src="img/video_1.gif" width="400" /> | <img src="img/video_1.gif" width="400" />
 
 
 ## Usage
@@ -21,6 +21,13 @@ You can press `space` to skip a few training generations and `esc` to exit the s
 ## Customization
 Apart from the map, you may feel free to modify various aspects of the code such as refresh rate of the visualization, if you wish to have pre-training and the learning policy.
 
-Refresh Rate : `Line 290 : sleep_time = 0.1`, modify the corresponding per-loop sleep time
+__Refresh Rate__  `Line 290 : sleep_time = 0.1`, modify the corresponding per-loop sleep time
 
-Pre-Training : `Line 294 : my_agent.fastforward(100000)`, modify the amount of cycles to move forward
+__Pre-Training__   `Line 294 : my_agent.fastforward(100000)`, modify the amount of cycles to move forward
+
+#### Custom Map Creation
+When creating your own map, the following are the interpreted symbols:
+`x` - represents a deadly object that the agent should avoid stepping on
+`.` - represents an obstacle that is non-lethal, but blocks any movement
+`S` - represents the starting point
+`G` - represents the end point
