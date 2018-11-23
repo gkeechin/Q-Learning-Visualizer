@@ -2,7 +2,11 @@
 ## Overview
 Q-learning is a reinforcement learning technique used in machine learning. The goal of Q-learning is to learn a policy, which tells an agent what action to take under what circumstances. It does not require a model of the environment and can handle problems with stochastic transitions and rewards, without requiring adaptations.
 
-In this tool, we are using `curses` to render our map and various simulation statistics such as Q-Table entry at a particular state.
+In this tool, we are using `curses` to render our map and various simulation statistics such as Q-Table entry at a particular state. The following are some examples of the program running:
+
+![Pre-Trained Q-Learning Agent Exploring](img/video_1.gif)
+
+![Agent Successfully Running Through The Map](img/video_2.gif)
 
 
 ## Usage
@@ -18,4 +22,5 @@ You can press `space` to skip a few training generations and `esc` to exit the s
 Apart from the map, you may feel free to modify various aspects of the code such as refresh rate of the visualization, if you wish to have pre-training and the learning policy.
 
 Refresh Rate : `Line 290 : sleep_time = 0.1`, modify the corresponding per-loop sleep time
+
 Pre-Training : `Line 294 : my_agent.fastforward(100000)`, modify the amount of cycles to move forward
