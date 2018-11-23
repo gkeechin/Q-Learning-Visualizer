@@ -21,13 +21,17 @@ You can press `space` to skip a few training generations and `esc` to exit the s
 ## Customization
 Apart from the map, you may feel free to modify various aspects of the code such as refresh rate of the visualization, if you wish to have pre-training and the learning policy.
 
-__Refresh Rate__  `Line 290 : sleep_time = 0.1`, modify the corresponding per-loop sleep time
+__Learning Policy__ - In the initialization of the `Agent` object, you can state if you wish to use `qlearn (default)` or `sarsa` policies
 
-__Pre-Training__   `Line 294 : my_agent.fastforward(100000)`, modify the amount of cycles to move forward
+__Refresh Rate__ - `Line 290 : sleep_time = 0.1`, modify the corresponding per-loop sleep time
+
+__Pre-Training__ - `Line 294 : my_agent.fastforward(100000)`, modify the amount of cycles to move forward
 
 #### Custom Map Creation
+```
 When creating your own map, the following are the interpreted symbols:
-`x` - represents a deadly object that the agent should avoid stepping on
-`.` - represents an obstacle that is non-lethal, but blocks any movement
-`S` - represents the starting point
-`G` - represents the end point
+'x' - represents a deadly object that the agent should avoid stepping on
+'.' - represents an obstacle that is non-lethal, but blocks any movement
+'S' - represents the starting point
+'G' - represents the end point
+```
