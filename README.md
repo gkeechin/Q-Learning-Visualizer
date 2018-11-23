@@ -6,7 +6,7 @@ In this tool, we are using `curses` to render our map and various simulation sta
 
 Untrained Agent Exploration | Trained Agent Navigation
 ------------ | -------------
-<img src="img/video_1.gif" width="400" /> | <img src="img/video_1.gif" width="400" />
+<img src="img/video_1.gif" width="400" /> | <img src="img/video_2.gif" width="400" />
 
 
 ## Usage
