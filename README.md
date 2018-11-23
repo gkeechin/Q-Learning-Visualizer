@@ -4,9 +4,9 @@ Q-learning is a reinforcement learning technique used in machine learning. The g
 
 In this tool, we are using `curses` to render our map and various simulation statistics such as Q-Table entry at a particular state. The following are some examples of the program running:
 
-![Pre-Trained Q-Learning Agent Exploring](img/video_1.gif)
+![Pre-Trained Q-Learning Agent Exploring](img/video_1.gif =250x250)
 
-![Agent Successfully Running Through The Map](img/video_2.gif)
+![Agent Successfully Running Through The Map](img/video_2.gif =250x250)
 
 
 ## Usage
